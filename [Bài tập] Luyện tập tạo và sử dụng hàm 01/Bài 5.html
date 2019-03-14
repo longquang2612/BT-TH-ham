@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+<input type="text" class ="ketqua" id="star"/>
+<buton type="text" onclick="Tim()">Tim</buton>
+    <script>
+        var star = ['Aldebaran', 'Deneb, Vega', 'Altair', 'Dubhe', 'Regulus'];
+        var star1 = ['Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'UrsaMajor', 'Leo'];
+        function Tim() {
+            var mega = document.getElementById("star").value;
+            var ketqua = 0;
+            for (var i=0; i < star.length; i++){
+                if (mega == star[i]) {
+                    alert(star1[i]);
+                    ketqua = 1;
+                }
+            }
+            if (ketqua == 0);
+            {
+                alert("Không có kết quả");
+            }
+        }
+    </script>
+
+</body>
+</html>

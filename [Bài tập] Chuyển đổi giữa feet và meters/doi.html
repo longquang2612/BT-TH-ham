@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+            <label>Feet:</label>
+        </td>
+        <td>
+            <input id="feet" type="number" oninput="feetToMeter(this.value)" onchange="feetToMeter(this.value)">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Meters:</label>
+        </td>
+        <td>
+            <input id="meters" type="number" oninput="metersToFeet(this.value)" onchange="metersToFeet(this.value)">
+        </td>
+    </tr>
+</table>
+    <script>
+        function feetToMeter(valFeet) {
+            valFeet = parseFloat(valFeet);
+            document.getElementById("Meters").value =0.305 * valFeet;
+        }
+        function metersToFeet(valMeter) {
+            valMeter = parseFloat(valMeter);
+            document.getElementById("feet").value = 3.279 * valMeter;
+        }
+    </script>
+
+</body>
+</html>
