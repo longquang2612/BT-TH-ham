@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isPalindrome(s) {
+        var doixung = true;
+        for (var i = 0, j = s.length - 1; i <= j; i++, j--) {
+            if (s[i] != s[j]) {
+                doixung = false;
+            }
+        }
+        return doixung;
+    }
+    var word = prompt('nhap vao tu de kiem tra doi xung');
+    if (isPalindrome(word)) {
+        alert(word + ' la tu doi xung');
+    } else
+        alert(word + ' khong la tu doi xung');
+</script>
+
+</body>
+</html>
